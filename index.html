@@ -1,302 +1,126 @@
 <!doctype html>
-<html lang="en">
+<html lang="ur" dir="rtl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Interactive Flame Dragon — Demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Free Fire — Free Diamonds & UC: Legit Ways (قانونی طریقے)</title>
   <style>
-    html,body{height:100%;margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:#0b0b0c;color:#eee}
-    #app{display:flex;height:100vh;}
-    #canvas-wrap{flex:1;position:relative;overflow:hidden}
-    canvas{display:block}
-    #sidebar{width:320px;background:linear-gradient(180deg,#0f1720,#081018);padding:18px;box-shadow:0 0 40px rgba(0,0,0,0.6);}
-    h1{font-size:18px;margin:0 0 12px}
-    .control{margin-bottom:12px}
-    label{display:block;font-size:13px;margin-bottom:6px;opacity:0.9}
-    select,input[type=range]{width:100%}
-    .button{display:inline-block;padding:8px 12px;border-radius:8px;background:#ff6b35;color:#fff;text-decoration:none;cursor:pointer;margin-right:8px;border:none}
-    footer{position:absolute;left:18px;bottom:18px;color:#888;font-size:12px}
-    .small{font-size:12px;color:#bbb}
+    :root{--bg:#0b1220;--card:#0f1724;--muted:#94a3b8;--accent:#ef4444;--glass:rgba(255,255,255,0.04)}
+    body{font-family:Tahoma, Arial, sans-serif;background:linear-gradient(180deg,#071022 0%, #081426 100%);color:#e6eef8;margin:0;padding:20px}
+    .wrap{max-width:900px;margin:20px auto;padding:24px;background:var(--card);border-radius:12px;box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+    h1{font-size:26px;margin:0 0 10px;color:#fff}
+    p.lead{color:var(--muted);line-height:1.7}
+    img.hero{width:100%;border-radius:8px;margin:12px 0}
+    h2{color:#fff;margin-top:22px;font-size:20px}
+    ul{color:var(--muted);line-height:1.7}
+    .note{background:var(--glass);padding:12px;border-radius:8px;color:#cbd5e1;margin:12px 0}
+    .btn{display:inline-block;padding:12px 18px;background:var(--accent);color:#fff;border-radius:10px;text-decoration:none;font-weight:700}
+    code{background:#071227;padding:4px 6px;border-radius:6px;color:#9be2ff}
+    footer{margin-top:24px;color:var(--muted);font-size:13px}
+    .image-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}
+    .small{font-size:13px;color:var(--muted)}
+    .faq{margin-top:14px}
   </style>
 </head>
 <body>
-  <div id="app">
-    <div id="sidebar">
-      <h1>Flame Dragon — Selector</h1>
-      <p class="small">Choose a dragon body style and tweak flame intensity, color and animation speed. Click & drag in the 3D view to rotate. Scroll to zoom. Use the buttons to export or reset.</p>
+  <div class="wrap">
+    <h1>Free Fire — مفت Diamonds اور UC حاصل کرنے کے جائز (قانونی) طریقے</h1>
+    <p class="lead">یہ بلاگ آپ کو step-by-step بتائے گا کہ کن legitimate ذرائع سے آپ Free Fire کے Diamonds / UC حاصل کر سکتے ہیں — بغیر کسی cheat، hack، یا غیر قانونی طریقے کے۔ نیچے دیے گئے تمام طریقے محفوظ، Garena کی Terms کے خلاف نہیں، اور زیادہ تر players کے لیے practical ہیں.</p>
 
-      <div class="control">
-        <label for="dragonSelect">Dragon type</label>
-        <select id="dragonSelect">
-          <option value="serpent">Serpent (long & sinuous)</option>
-          <option value="wyvern">Wyvern (bulkier, wing hint)</option>
-          <option value="spine">Spined (armored look)</option>
-        </select>
-      </div>
+    <img class="hero" src="assets/freefire-hero.jpg" alt="Free Fire gaming" />
 
-      <div class="control">
-        <label for="flameIntensity">Flame intensity <span id="flameVal">0.7</span></label>
-        <input id="flameIntensity" type="range" min="0" max="1" step="0.01" value="0.7">
-      </div>
+    <div class="note"><strong>اہم:</strong> یہ مضمون کسی بھی قسم کی hacking یا cheating کی ہدایت نہیں دیتا۔ "Unlimited diamonds" یا cracked generators تبلیغ یا استعمال مت کریں — اس سے account ban یا قانونی مسئلے ہو سکتے ہیں.</div>
 
-      <div class="control">
-        <label for="speedRange">Animation speed <span id="speedVal">1.0</span></label>
-        <input id="speedRange" type="range" min="0" max="3" step="0.01" value="1">
-      </div>
+    <h2>خلاصہ — کون کون سے طریقے کام کرتے ہیں؟</h2>
+    <ul>
+      <li>In-Game Events اور Redeem Codes (Garena کی طرف سے)</li>
+      <li>Giveaways اور Community Contests</li>
+      <li>Tournaments اور Esports competitions</li>
+      <li>Surveys / Reward apps (Google Opinion Rewards, trusted survey sites)</li>
+      <li>Third-party legitimate promotions (brand partnerships, Play Store offers)</li>
+      <li>Trading / Selling in-game items: <em>recommended nahi unless official</em></li>
+    </ul>
 
-      <div class="control">
-        <label for="palette">Color palette</label>
-        <select id="palette">
-          <option value="classic">Classic (red → yellow)</option>
-          <option value="blue">Blue ice-flame</option>
-          <option value="green">Toxic green</option>
-        </select>
-      </div>
+    <h2>1) In-Game Events اور Redeem Codes — سب سے پہلا ذریعہ</h2>
+    <p class="small">Garena وقتاً فوقتاً redeem codes دیتی ہے (special events, collaborations, stream gifts). یہ codes عام طور پر limited-time ہوتے ہیں اور انہیں official Garena redeem site پر claim کیا جاتا ہے.</p>
 
-      <div class="control">
-        <button id="downloadBtn" class="button">Export PNG</button>
-        <button id="resetBtn" class="button" style="background:#2b3440">Reset</button>
-      </div>
-
-      <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:14px 0">
-      <div class="small">Tip: You can replace the dragon generator with a glTF model (loader included but commented) if you want a high-detail dragon model. This demo uses procedural geometry so it runs without external assets.</div>
+    <div class="image-row">
+      <img src="assets/redeem-screenshot1.jpg" alt="Redeem code example" />
+      <img src="assets/event-poster.jpg" alt="In-game event poster" />
     </div>
 
-    <div id="canvas-wrap">
-      <canvas id="c"></canvas>
-      <footer>Interactive Flame Dragon • Move mouse to rotate • Abdulrehman</footer>
+    <h3>Redeem code claim کرنے کا طریقہ (step-by-step)</h3>
+    <ol class="small">
+      <li>Official Garena Redeem site کھولو: <code>https://reward.ff.garena.com</code> (یہ مثال ہے — Hammesha official URL verify karo)</li>
+      <li>اپنا Free Fire account select کرو (Facebook, VK, Google, Apple, یا Guest jaisa option)</li>
+      <li>Redeem code enter کرو اور Confirm پر click کرو</li>
+      <li>اگر code valid ہوا تو آپ کو in-game mail میں reward ملے گا — check Mail → Rewards</li>
+    </ol>
+
+    <div class="note">Tip: Redeem codes public hotay hain lekin jaldi expire bhi ho jatey hain. Trusted pages aur official social accounts follow karo.</div>
+
+    <h2>2) Giveaways اور Community Contests</h2>
+    <p class="small">Instagram, YouTube aur Discord پر bohat se creators giveaways chalate hain. Yeh ek common aur safe tareeqa hai free diamonds jeetne ka — par ensure karo ke giveaway legitimate ho.</p>
+    <ul>
+      <li>Giveaway join karne se pehle rules padho.</li>
+      <li>Winners ka announcement public channels par hota hai — private transfer se hamesha caution rakho.</li>
+    </ul>
+
+    <h2>3) Tournaments aur Esports Events</h2>
+    <p class="small">Local tournaments (small cash prizes) ya community cups mein hissa le kar aap diamonds ya UC jeet sakte ho. Agar tum competitive ho to yeh long-term sustainable tareeqa hai.</p>
+
+    <h2>4) Reward Apps aur Surveys</h2>
+    <p class="small">Google Opinion Rewards jaise apps se Play Store credit milta hai — us credit se aap Play Store purchases karke diamonds le sakte ho. Kuch trusted reward apps aur survey sites bhi Play Store / Google Play credits ya vouchers dete hain.</p>
+
+    <h2>5) Legit Promotions / Brand Partnerships</h2>
+    <p class="small">Kuch brands games ke saath promotions chalate hain — jaise app installs, special offers, ya collabs jahan players ko freebies milti ہیں. Official partner announcements follow karo.</p>
+
+    <h2>6) Safety: Kya avoid karna chahiye</h2>
+    <ul>
+      <li>"Free diamond generator" websites — ye almost always scams hain.</li>
+      <li>Account sharing, third-party APKs, patched files — ye account ban ka sabab bante hain.</li>
+      <li>Paid services that promise "unlimited diamonds" — trust nahi karo.</li>
+    </ul>
+
+    <div class="note">Kuch log kehte hain "just use VPN + generator"— yeh risk hai. Garena ki Terms ke against hone ke ilawa aapka account permanently ban ho sakta hai.</div>
+
+    <h2>UC (Unknown Cash) Claim karne ka legal tareeqa</h2>
+    <p class="small">UC normally in-game currency hai jise aap directly in-game store se real money se kharidte ho. Legal tareeqay:</p>
+    <ul>
+      <li>In-game purchase via Google Play / App Store</li>
+      <li>Gift card ya Play Store credit se purchase</li>
+      <li>Tournament/giveaway winnings jo UC mein diye jayen</li>
+    </ul>
+
+    <h2>Frequently Asked Questions (FAQs)</h2>
+    <div class="faq">
+      <strong>Q: Kya koi free trick hai jo main use kar sakun bina risk ke?</strong>
+      <p class="small">A: Haan — participate karo official events, giveaways, aur surveys. Yeh safe hain. Jo bhi "instant unlimited diamonds" promise kare vo scam hai.</p>
+
+      <strong>Q: Kya main kisi third-party website se UC redeem kar sakta hoon?</strong>
+      <p class="small">A: Sirf official Garena redeem portals aur trusted partner sites se hi codes claim karo. Unknown websites se avoid karo.</p>
+
+      <strong>Q: Agar mera account ban hogaya to kya karun?</strong>
+      <p class="small">A: Garena support se contact karo aur appeal submit karo. Lekin agar Terms of Service violated hui hongi to recovery mushkil ho sakti hai.</p>
     </div>
+
+    <h2>Landing page mein images kaise add karo (repository structure)</h2>
+    <p class="small">Repo structure example (GitHub):</p>
+    <pre class="small">/index.html
+/assets/freefire-hero.jpg
+/assets/redeem-screenshot1.jpg
+/assets/event-poster.jpg
+</pre>
+    <p class="small">Images ko `assets/` folder mein upload karo aur paths upar diye gaye HTML ke mutabiq rakh do.</p>
+
+    <h2>HTML Code snippet (Adsterra Smart Link button) — isay replace karo apni link se</h2>
+    <pre class="small">&lt;a class="btn" href="YOUR_ADSTERRA_SMARTLINK" target="_blank" rel="noopener"&gt;Exclusive FreeFire Guide &amp; Rewards&lt;/a&gt;</pre>
+
+    <p class="lead">Agar tum chaho to main yahan se ek extra section bhi daal doon: <em>“Top 10 legit sources for Redeem Codes”</em> aur har source ke official links (jaise Garena official pages, verified YouTube channel list) add kar doon — magar official links time-sensitive hote hain aur unko update rakhna zaroori hai.</p>
+
+    <footer>
+      <p>© <strong>FreeFire Tips</strong> — Ye blog sirf educational maqsad ke liye hai. Kisi bhi illegal method ka istemal na karein. Agar aap chahen to main yeh file GitHub-ready bana kar canvas par store kar deta hoon — phir aap repo mein paste kar ke host kar sakte ho.</p>
+    </footer>
   </div>
-
-  <!-- Three.js from CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/examples/js/controls/OrbitControls.js"></script>
-  <script>
-  // --- Scene setup ---
-  const canvas = document.getElementById('c');
-  const renderer = new THREE.WebGLRenderer({canvas, antialias:true, alpha:false});
-  renderer.setPixelRatio(window.devicePixelRatio);
-  renderer.setSize(window.innerWidth - 320, window.innerHeight);
-  renderer.outputEncoding = THREE.sRGBEncoding;
-
-  const scene = new THREE.Scene();
-  scene.background = new THREE.Color(0x050507);
-
-  const camera = new THREE.PerspectiveCamera(45, (window.innerWidth - 320)/window.innerHeight, 0.1, 1000);
-  camera.position.set(0, 6, 18);
-
-  const controls = new THREE.OrbitControls(camera, renderer.domElement);
-  controls.enableDamping = true;
-  controls.dampingFactor = 0.07;
-
-  // lights
-  const amb = new THREE.HemisphereLight(0xffffff, 0x222222, 0.6);
-  scene.add(amb);
-  const pLight = new THREE.PointLight(0xffaa66, 2, 60);
-  pLight.position.set(10,10,10);
-  scene.add(pLight);
-
-  // helper ground subtle
-  const grid = new THREE.Mesh(
-    new THREE.PlaneGeometry(200,200),
-    new THREE.MeshBasicMaterial({color:0x000000,transparent:true,opacity:0})
-  );
-  grid.rotation.x = -Math.PI/2; grid.position.y = -6;
-  scene.add(grid);
-
-  // --- Shader for flame-like material ---
-  const FlameShader = {
-    uniforms: {
-      time: {value:0},
-      intensity: {value:0.7},
-      palette: {value:0},
-    },
-    vertexShader: `
-      varying vec3 vPos;
-      varying vec2 vUv;
-      void main(){
-        vUv = uv;
-        vPos = position;
-        gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0);
-      }
-    `,
-    fragmentShader: `
-      varying vec3 vPos;
-      varying vec2 vUv;
-      uniform float time;
-      uniform float intensity;
-      uniform int palette;
-
-      // simple hash / noise
-      float hash(float n){return fract(sin(n)*43758.5453123);} 
-      float noise(vec2 x){
-        vec2 p = floor(x);
-        vec2 f = fract(x);
-        f = f*f*(3.0-2.0*f);
-        float n = p.x + p.y*57.0;
-        float res = mix(mix(hash(n+0.0), hash(n+1.0), f.x), mix(hash(n+57.0), hash(n+58.0), f.x), f.y);
-        return res;
-      }
-
-      vec3 getPalette(float t){
-        if(palette==0){
-          return mix(vec3(0.6,0.05,0.02), vec3(1.0,0.9,0.2), t);
-        } else if(palette==1){
-          return mix(vec3(0.02,0.08,0.6), vec3(0.8,0.9,1.0), t);
-        } else {
-          return mix(vec3(0.02,0.4,0.05), vec3(0.9,1.0,0.4), t);
-        }
-      }
-
-      void main(){
-        float h = length(vPos.xy);
-        float t = vUv.y * 1.5 - time*0.6;
-        float n = noise(vec2(vUv.x*4.0 + time*0.8, vUv.y*6.0));
-        float flame = smoothstep(0.0, 1.0, (1.0 - vUv.y*1.2) + n*0.6);
-        flame = pow(flame, 1.0 - intensity*0.8);
-        vec3 col = getPalette(clamp(flame,0.0,1.0));
-        // add glow towards tip
-        float glow = exp(-h*1.2) * (0.6 + 0.6*flame);
-        vec3 outc = col * (0.6 + flame*0.8) + vec3(glow);
-        gl_FragColor = vec4(outc, 1.0);
-      }
-    `
-  };
-
-  // container for dragon mesh
-  let dragonGroup = new THREE.Group();
-  scene.add(dragonGroup);
-
-  // create a tube along a spline and vary parameters per style
-  function makeDragonMesh(style){
-    const points = [];
-    const length = 160;
-    const radiusBase = {serpent:0.6, wyvern:1.1, spine:0.9}[style];
-    const curl = {serpent:1.6, wyvern:0.9, spine:1.0}[style];
-
-    for(let i=0;i<length;i++){
-      const t = i/(length-1);
-      const x = (t-0.5)*20;
-      const y = Math.sin(t*Math.PI*2.0*curl)*3.0;
-      const z = Math.cos(t*3.0)*2.0*t;
-      points.push(new THREE.Vector3(x,y, z));
-    }
-    const spline = new THREE.CatmullRomCurve3(points);
-    const geometry = new THREE.TubeGeometry(spline, 320, radiusBase, 20, false);
-
-    // add spines for 'spine' style
-    if(style==='spine'){
-      const pos = geometry.attributes.position;
-      const len = pos.count;
-      const extra = new Float32Array(len*3);
-      for(let i=0;i<len;i++){
-        const vx = pos.getX(i), vy = pos.getY(i), vz = pos.getZ(i);
-        const offset = Math.sin(vx*2.0 + vy*3.0)*0.6;
-        extra[i*3+0] = vx + offset;
-        extra[i*3+1] = vy + Math.abs(offset)*0.8 + 0.2;
-        extra[i*3+2] = vz;
-      }
-      // create an extruded silhouette by merging with base geometry
-      const spineGeo = geometry.clone();
-      spineGeo.translate(0,0.05,0);
-      // we'll keep simple: use same geometry but material will show 'spine' by noise
-    }
-
-    const material = new THREE.ShaderMaterial({
-      uniforms: THREE.UniformsUtils.clone(FlameShader.uniforms),
-      vertexShader: FlameShader.vertexShader,
-      fragmentShader: FlameShader.fragmentShader,
-      side: THREE.DoubleSide,
-    });
-
-    const mesh = new THREE.Mesh(geometry, material);
-    mesh.castShadow = true; mesh.receiveShadow = true;
-
-    // simple head: sphere attached to one end
-    const headGeo = new THREE.SphereGeometry(radiusBase*1.4, 24, 18);
-    const headMat = material;
-    const head = new THREE.Mesh(headGeo, headMat);
-    head.position.copy(points[length-1]);
-    // small scale to fit
-    head.position.multiplyScalar(1.0);
-
-    const group = new THREE.Group();
-    group.add(mesh);
-    group.add(head);
-
-    return {group, material};
-  }
-
-  // current
-  let state = {type:'serpent', intensity:0.7, speed:1.0, palette:0};
-  let current = null;
-
-  function buildDragon(){
-    if(current){ scene.remove(current.group); }
-    dragonGroup.clear();
-    const {group, material} = makeDragonMesh(state.type);
-    current = {group, material};
-    group.rotation.y = Math.PI;
-    dragonGroup.add(group);
-    scene.add(dragonGroup);
-  }
-
-  buildDragon();
-
-  // resize
-  function onWindowResize(){
-    const w = window.innerWidth - 320;
-    const h = window.innerHeight;
-    renderer.setSize(w,h);
-    camera.aspect = w/h;
-    camera.updateProjectionMatrix();
-  }
-  window.addEventListener('resize', onWindowResize);
-
-  // UI bindings
-  const dragonSelect = document.getElementById('dragonSelect');
-  const flameIntensity = document.getElementById('flameIntensity');
-  const flameVal = document.getElementById('flameVal');
-  const speedRange = document.getElementById('speedRange');
-  const speedVal = document.getElementById('speedVal');
-  const palette = document.getElementById('palette');
-  const downloadBtn = document.getElementById('downloadBtn');
-  const resetBtn = document.getElementById('resetBtn');
-
-  dragonSelect.addEventListener('change', ()=>{ state.type = dragonSelect.value; buildDragon(); });
-  flameIntensity.addEventListener('input', ()=>{ state.intensity = parseFloat(flameIntensity.value); flameVal.textContent = state.intensity.toFixed(2); if(current) current.material.uniforms.intensity.value = state.intensity; });
-  speedRange.addEventListener('input', ()=>{ state.speed = parseFloat(speedRange.value); speedVal.textContent = state.speed.toFixed(2); });
-  palette.addEventListener('change', ()=>{ state.palette = ['classic','blue','green'].indexOf(palette.value); if(current) current.material.uniforms.palette.value = state.palette; });
-
-  downloadBtn.addEventListener('click', ()=>{
-    renderer.render(scene, camera);
-    const url = renderer.domElement.toDataURL('image/png');
-    const a = document.createElement('a'); a.href = url; a.download = 'dragon.png'; a.click();
-  });
-  resetBtn.addEventListener('click', ()=>{ dragonSelect.value='serpent'; flameIntensity.value=0.7; speedRange.value=1; palette.value='classic'; flameVal.textContent='0.7'; speedVal.textContent='1.0'; state={type:'serpent',intensity:0.7,speed:1.0,palette:0}; buildDragon(); });
-
-  // animate
-  const clock = new THREE.Clock();
-  function animate(){
-    requestAnimationFrame(animate);
-    const t = clock.getElapsedTime();
-    if(current){
-      current.material.uniforms.time.value = t * state.speed;
-      current.material.uniforms.intensity.value = state.intensity;
-      current.material.uniforms.palette.value = state.palette;
-      // subtle breathing animation
-      current.group.children[0].rotation.z = Math.sin(t*0.5)*0.02;
-      current.group.children[0].rotation.x = Math.sin(t*0.3)*0.02;
-    }
-    controls.update();
-    renderer.render(scene, camera);
-  }
-  animate();
-
-  // initial uniform sync
-  setTimeout(()=>{
-    if(current) { current.material.uniforms.intensity.value = state.intensity; current.material.uniforms.palette.value = state.palette; }
-  }, 50);
-  </script>
 </body>
 </html>
